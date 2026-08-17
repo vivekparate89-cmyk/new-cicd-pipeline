@@ -39,7 +39,7 @@ jobs:
       matrix:
         environment: [preprod, prod]
 
-    if: github.event_name != 'workflow_dispatch' || inputs.environment == matrix.environment
+    
 
     env:
       ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
